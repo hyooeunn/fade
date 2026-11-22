@@ -1,0 +1,45 @@
+/* FADE design tokens — 가죽 바인더 · 크림 종이 · 필름 */
+:root {
+  /* surfaces */
+  --fade-desk: #e7e5e0;
+  --fade-leather: #3a2c26;
+  --fade-board: #c2bdb1;
+  --fade-contact: #eee8dc;
+  --fade-paper: #f8f7f3;
+  --fade-card: #f7f6f2;
+  --fade-ticket: #ede3c4;
+  --fade-film: #221d1a;
+
+  /* ink */
+  --fade-ink: #3a2c26;
+  --fade-ink-body: #2e2824;
+  --fade-ink-muted: #6b6258;
+  --fade-ink-faded: #78706a;
+
+  /* lines */
+  --fade-rule: #e4e1da;
+  --fade-rule-strong: #d4d0c7;
+
+  /* index tabs */
+  --fade-tab-today: #e9e3d6;
+  --fade-tab-week: #cfe3e6;
+  --fade-tab-month: #b9c2a8;
+  --fade-tab-transcribe: #ebcfd3;
+
+  /* accents */
+  --fade-grease: #c2452d;
+  --fade-stamp: #8a3b2e;
+  --fade-edge-print: #d9944a;
+  --fade-amber: #c8853f;
+  --fade-metal: #b5b8bc;
+
+  /* type */
+  --fade-font-display: 'Cormorant Garamond', 'Noto Serif KR', serif;
+  --fade-font-serif: 'Noto Serif KR', serif;
+  --fade-font-sans: 'Noto Sans KR', system-ui, sans-serif;
+  --fade-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* shadow */
+  --fade-shadow-paper: 0 8px 18px rgba(30, 20, 15, 0.22);
+  --fade-shadow-binder: 0 30px 60px rgba(40, 28, 20, 0.32);
+}
