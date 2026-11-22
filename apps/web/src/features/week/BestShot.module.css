@@ -1,0 +1,72 @@
+.wrap {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.polaroid {
+  flex: none;
+  width: 210px;
+  margin: 0;
+  padding: 9px 9px 0;
+  background: #fbf9f4;
+  transform: rotate(-3deg);
+  box-shadow: 0 12px 24px rgba(40, 28, 20, 0.22);
+}
+
+.polaroid img,
+.empty {
+  display: block;
+  width: 192px;
+  height: 165px;
+  object-fit: cover;
+  transition: filter 1.2s ease;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2ddd3;
+  font-family: var(--fade-font-mono);
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  color: #5e5446;
+}
+
+.polaroid figcaption {
+  padding: 9px 2px 11px;
+  font-family: var(--fade-font-mono);
+  font-size: 10px;
+  color: #5e5446;
+}
+
+.legend {
+  padding-top: 8px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #4e4740;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legendRow + .legendRow {
+  margin-top: 6px;
+}
+
+.swatch {
+  width: 22px;
+  height: 14px;
+  background: #8a9a88;
+}
+
+.swatchFaded {
+  filter: saturate(0.2) brightness(1.35) contrast(0.6);
+}
