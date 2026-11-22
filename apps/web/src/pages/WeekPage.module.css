@@ -1,0 +1,36 @@
+.kicker {
+  font-family: var(--fade-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--fade-ink-muted);
+}
+
+.title {
+  margin: 8px 0 0;
+  font-family: var(--fade-font-display);
+  font-weight: 500;
+  font-size: clamp(40px, 5vw, 54px);
+  line-height: 0.95;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  font-family: var(--fade-font-serif);
+  font-size: 17px;
+  color: #4e4740;
+}
+
+.footer {
+  margin: 22px 0 0;
+  font-family: var(--fade-font-mono);
+  font-size: 11px;
+  color: var(--fade-ink-muted);
+}
+
+.navButton {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+}
