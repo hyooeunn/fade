@@ -1,0 +1,25 @@
+.logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+/* 글자가 오른쪽으로 갈수록 흐려지는 워드마크 */
+.word {
+  font-family: var(--fade-font-display);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1;
+  padding-right: 4px;
+  background: linear-gradient(90deg, var(--fade-ink) 0%, var(--fade-ink) 50%, rgba(58, 44, 38, 0.25) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.vol {
+  font-family: var(--fade-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--fade-ink-muted);
+}
