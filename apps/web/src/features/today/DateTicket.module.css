@@ -1,0 +1,44 @@
+.ticket {
+  position: absolute;
+  left: 34px;
+  top: 34px;
+  width: 158px;
+  padding: 10px 12px;
+  background: var(--fade-ticket);
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 8px rgba(40, 28, 20, 0.2);
+}
+
+.kicker {
+  font-family: var(--fade-font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: #5e5446;
+}
+
+.date {
+  margin-top: 2px;
+  font-family: var(--fade-font-display);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.wire {
+  position: absolute;
+  left: 24px;
+  top: 58px;
+  width: 230px;
+  height: 2px;
+  background: #7e7a72;
+}
+
+.bead {
+  position: absolute;
+  left: 250px;
+  top: 54px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #7e7a72;
+}
