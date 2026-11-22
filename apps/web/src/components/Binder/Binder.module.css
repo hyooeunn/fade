@@ -1,0 +1,183 @@
+.screen {
+  min-height: 100vh;
+  padding: 26px 32px 48px;
+  background: var(--fade-desk);
+}
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.coverLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(58, 44, 38, 0.3);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.binder {
+  position: relative;
+  max-width: 1280px;
+  margin: 20px auto 0;
+  padding: 20px 66px 20px 20px;
+  background: var(--fade-leather);
+  border-radius: 18px;
+  box-shadow: var(--fade-shadow-binder);
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+  border-radius: 18px;
+}
+
+.spread {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  position: relative;
+  flex: 1 1 500px;
+  min-width: 0;
+  min-height: 820px;
+  border-radius: 10px 0 0 10px;
+}
+
+.leftBoard {
+  background: var(--fade-board);
+  overflow: hidden;
+}
+
+.leftContact {
+  background: var(--fade-contact);
+  padding: 40px 36px 32px;
+}
+
+.right {
+  position: relative;
+  flex: 1 1 520px;
+  min-width: 0;
+  min-height: 820px;
+  padding: 62px 56px 34px 76px;
+  background: var(--fade-paper);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 4px 0 0 #eceae4, 8px 0 0 #dedad2;
+}
+
+.rings {
+  position: absolute;
+  left: -22px;
+  top: 70px;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.clip {
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 48px);
+}
+
+.tabs {
+  position: absolute;
+  right: -60px;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 96px;
+  padding: 0;
+  border: 0;
+  border-radius: 0 9px 9px 0;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--fade-ink);
+  transition: width 0.2s ease;
+}
+
+.tab:hover:not(:disabled) {
+  width: 50px;
+}
+
+.tab:disabled {
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+.tabToday { background: var(--fade-tab-today); }
+.tabWeek { background: var(--fade-tab-week); }
+.tabMonth { background: var(--fade-tab-month); }
+.tabTranscribe { background: var(--fade-tab-transcribe); }
+
+.tabActive {
+  width: 52px;
+  height: 104px;
+  padding-left: 6px;
+  background: var(--fade-paper);
+  font-weight: 700;
+}
+
+/* 좁은 화면: 페이지가 위아래로 쌓이면 왼쪽 페이지 모서리 정리 */
+@media (max-width: 1100px) {
+  .left {
+    border-radius: 10px 10px 0 0;
+  }
+  .right {
+    border-radius: 0 0 10px 10px;
+  }
+  .rings {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen {
+    padding: 16px 12px 32px;
+  }
+  .binder {
+    padding: 12px 52px 12px 12px;
+  }
+  .right {
+    padding: 48px 24px 28px;
+  }
+  .tabs {
+    right: -48px;
+  }
+  .tab {
+    width: 38px;
+  }
+}
