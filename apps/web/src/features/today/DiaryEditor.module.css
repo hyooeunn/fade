@@ -1,0 +1,49 @@
+.editor {
+  margin-top: 30px;
+}
+
+.title {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--fade-font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--fade-ink);
+}
+
+.title:focus,
+.body:focus {
+  outline: none;
+}
+
+.title::placeholder,
+.body::placeholder {
+  color: #a8a097;
+}
+
+/* 줄 노트: 줄 간격(34px)과 배경 선을 맞춘다 */
+.body {
+  display: block;
+  width: 100%;
+  min-height: 306px;
+  margin-top: 14px;
+  padding: 0;
+  border: 0;
+  resize: none;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 34px;
+  color: var(--fade-ink-body);
+  background: repeating-linear-gradient(to bottom, transparent 0 33px, var(--fade-rule) 33px 34px);
+  background-attachment: local;
+}
+
+.status {
+  margin-top: 8px;
+  font-family: var(--fade-font-mono);
+  font-size: 11px;
+  color: var(--fade-ink-muted);
+}
