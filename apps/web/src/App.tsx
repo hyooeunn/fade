@@ -1,3 +1,11 @@
+import { useRoute } from './lib/router';
+import { CoverPage } from './pages/CoverPage';
+
 export function App() {
-  return <main style={{ padding: 40 }}>Fade</main>;
+  const route = useRoute();
+
+  switch (route.name) {
+    default:
+      return <CoverPage />;
+  }
 }
