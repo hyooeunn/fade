@@ -10,9 +10,10 @@
 
 .develop {
   position: absolute;
-  left: 400px;
-  top: 470px;
+  right: 30px;
+  bottom: 96px;
   width: 150px;
+  text-align: right;
   margin: 0;
   font-family: var(--fade-font-mono);
   font-size: 10px;

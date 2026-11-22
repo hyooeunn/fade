@@ -1,8 +1,8 @@
 .slip {
   position: absolute;
-  right: 30px;
-  top: 190px;
-  width: 230px;
+  right: 24px;
+  top: 96px;
+  width: 200px;
   padding: 26px 18px 10px;
   background: var(--fade-card);
   transform: rotate(1.5deg);
